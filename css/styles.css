@@ -111,6 +111,7 @@ img{
 
 .navclose, .navlink, .navBrand, .navtoggle{
   color: var(--black-color);
+  transition: 0.3s;
 }
 
 .navlink:hover{
