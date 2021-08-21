@@ -134,14 +134,14 @@ img{
   width: 100%;
 }
 
-.homecontainer{
+.home .content{
   height: 100vh;
   display:flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.homeimg{
+.home .logoParts{
   position: relative;
   padding-top: 1.5rem;
   justify-self: center;
@@ -150,7 +150,7 @@ img{
   margin-top: 10vh;
 }
 
-.homeimg img{
+.home .logoParts img{
   position: absolute;
   top: 0;
   left: 0;
@@ -164,19 +164,19 @@ img{
 
 
 
-.hometitle{
+.home .title{
   font-size: var(--big-font-size);
   line-height: 1.3;
   margin-bottom: 1rem;
   margin: 0 50px;
 }
 
-.homedescription{
+.home .slogan{
   margin-bottom: 2.5rem;
   margin-left: 50px;
 }
 
-.homebutton{
+.home .redirector{
   display: inline-block;
   background-color: var(--first-color-dark);
   color: var(--black-color);
@@ -186,11 +186,11 @@ img{
   transition: 0.5s;
 }
 
-.homebutton:hover{
+.home .redirector:hover{
   background-color: var(--first-color-darken);
 }
 
-.homebg {
+.home .logo {
   background-color: var(--first-color-dark);
   width: 100vh;
   height: 100vh;
@@ -223,7 +223,7 @@ img{
     margin-bottom: 0;
   }
 
-  .homecontainer{
+  .home .content{
     height: 100vh;
     grid-template-columns: repeat(2, max-content);
     grid-template-rows:  1fr;
@@ -232,13 +232,13 @@ img{
     justify-content: center;
   }
   
-  .homeimg{
+  .home .logoParts{
     order: 1;
     width: 375px;
     height: 289px;
   }
 
-  .homeimg img{
+  .home .logoParts img{
     width: 375px;
   }
 }
@@ -249,17 +249,17 @@ img{
     margin-right: auto;
   }
 
-  .homecontainer{
+  .home .content{
     justify-content: initial;
     column-gap: 4.5rem;
   }
 
-  .homeimg{
+  .home .logoParts{
     width: 604px;
     height: 466px;
   }
 
-  .homeimg img{
+  .home .logoParts img{
     width: 604px;
   }
 }
