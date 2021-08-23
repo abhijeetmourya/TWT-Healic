@@ -27,7 +27,7 @@ function move(e){
 
 /*===== GSAP ANIMATION =====*/
 // NAV
-gsap.from('.navlogo, .navtoggle', {opacity: 0, duration: 1, delay:2, y: 10})
+gsap.from('.navtoggle', {opacity: 0, duration: 1, delay:2, y: 10})
 gsap.from('.navitem', {opacity: 0, duration: 1, delay: 2.1, y: 30, stagger: 0.2,})
 
 // HOME

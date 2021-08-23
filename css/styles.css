@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root{
   --header-height:  3rem;
   --first-color: #F9F8F8;
@@ -76,8 +80,8 @@ img{
   background-color: #fff;
   align-items: center;
   position:fixed;
-  border-bottom: 1px solid #000; /*temporary*/
   width: 100%;
+  box-shadow: 0 0 5px #121212;
 }
 
 .navtestlink {
@@ -326,7 +330,7 @@ img{
 
 .about-section-content .about-content {
   margin-top: 20px;
-  color: #3F88C5;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -340,11 +344,11 @@ img{
   line-height: 1.5;
 }
 
-.about-section-content .about-content .takeatest-button{
+.about-section-content .about-content .viewourservices-button{
   margin-top: 30px;
 }
 
-.about-section-content .about-content .takeatest-button a {
+.about-section-content .about-content .viewourservices-button a {
   background-color: #3F88C5;
   padding: 12px 40px;
   text-decoration: none;
@@ -355,7 +359,7 @@ img{
 }
 
 
-.about-section-content .about-content .takeatest-button a:hover{
+.about-section-content .about-content .viewourservices-button a:hover{
   background-color: #3DA4D8;
   color: white;
 }
@@ -375,49 +379,56 @@ img{
 }
 
 @media screen and (max-width: 768px){
-  .about-container{
-    width: 80%;
+    .about-container{
+      width: 80%;
+      display: block;
+      margin: auto;
+      padding-top: 50px;
+  }
+    .about-section-content{
+    float: none;
+    width: 100%;
     display: block;
     margin: auto;
-    padding-top: 50px;
-}
-  .about-section-content{
-  float: none;
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-.image-section{
-  float: none;
-  width: 100%;
-}
-.image-section img{
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
+  }
+  .image-section{
+    float: none;
+    width: 100%;
+  }
+  .image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
 
-.about-section-content .about-title{
-  text-align: center;
-  font-size: 19px;
+  .about-section-content .about-title{
+    text-align: center;
+    font-size: 19px;
+  }
+  .about-section-content .about-content .viewourservices-button{
+    text-align: center;
+  }
+  .about-section-content .about-content .viewourservices-button a{
+    padding: 9px 30px;
+  }
+  .about-section-content .social-buttons{
+    text-align: center;
+  }
 }
-.about-section-content .about-content .takeatest-button{
-  text-align: center;
-}
-.about-section-content .about-content .takeatest-button a{
-  padding: 9px 30px;
-}
-.about-section-content .social-buttons{
-  text-align: center;
-}
-
-}
-
 
 @media screen and (max-width: 320px){
-  .about-section-content .about-content .takeatest-button a{
+  .about-section-content .about-content .viewourservices-button a{
     width: 100%;
     padding: 8px;
   }
+}
+
+.services {
+  height: 100vh;
+}
+
+.contact {
+  height: 100vh;
+  background-color: #1D3044;
 }
