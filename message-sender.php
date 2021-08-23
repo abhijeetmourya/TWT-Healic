@@ -43,7 +43,7 @@ if($_POST) {
  
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $email . "\r\n";
+    .'From: ' . $sender_email . "\r\n";
       
     if(mail($recipient, $subject, $email_body, $headers)) {
         echo "<p>Thank you for contacting us, $name. You will get a reply within 24 hours.</p>";
