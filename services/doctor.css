@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+
+:root{
+  --header-height:  3rem;
+  --first-color: #F9F8F8;
+  --first-color-dark: #05ec5e;
+  --first-color-darken: #3DA4D8;
+  --black-color: #1D3044;
+  --body-font: 'Quicksand', sans-serif;
+  --big-font-size: 2.5rem;
+  --normal-font-size: .938rem;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: var(--header-height) 0 0 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+h1,p,ul{
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  position:fixed;
+  width: 100%;
+  box-shadow: 0 0 5px #121212;
+}
+
+.navtestlink {
+  border: 1px solid var(--first-color-dark);
+  padding: 10px;
+}
+
+.navlink.active {
+  color: var(--first-color-dark)
+}
+
+@media screen and (max-width: 768px){
+  .navmenu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    padding: 3.5rem 1.5rem 0;
+    background: rgba(255,255,255,.3);
+    backdrop-filter: blur(10px);
+    transition: .5s;
+  }
+}
+
+.navclose{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navitem{
+  margin-bottom: 2rem;
+}
+
+.navclose, .navlink, .navBrand, .navtoggle{
+  color: var(--black-color);
+  transition: 0.3s;
+}
+
+.navlink:hover{
+  color: var(--first-color-dark);
+}
+
+.navtoggle{
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+.show{
+  right: 0;
+}
+
+
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+  
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .navtoggle, .navclose{
+    display: none;
+  }
+
+  .navlist{
+    display: flex;
+    margin: 20px;
+  }
+
+  .navitem{
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+
+
+
+  .logo {
+    display: none;
+  }
+
+}
+
+.navBrand {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 10px;
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #444;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #aaa;
+}
+
