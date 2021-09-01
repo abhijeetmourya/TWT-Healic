@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.bmi-container h1{
+	display: flex;
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	font-family: "Poppins", sans-serif;
+}
+
+
+.bmi-container p{
+	display: flex;
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	font-family: "Poppins", sans-serif;
+}
+
+
+.bmi-container input{
+	display: flex;
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	font-family: "Poppins", sans-serif;
+}
+
+.bmi-container button{
+	overflow-x: hidden;
+	display: flex;
+	position: absolute;
+	margin: 25px;
+	padding: 3px 4px;
+	width: 100px;
+	align-items: center;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+}
+
+
+.bmi-button{
+	position: absolute;
+	right: 45%;
+}
+
+
+
