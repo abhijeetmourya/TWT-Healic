@@ -3,11 +3,14 @@
 *{
 	padding: 0;
 	margin: 0;
+	background: white;
 }
 
 
 
-.bmi-container h1{
+.container h1{
+	color: #1D3044;
+	text-decoration: uppercase;
 	display: flex;
 	position: relative;
 	width: 100%;
@@ -16,7 +19,11 @@
 }
 
 
-.bmi-container p{
+.container p{
+	margin-top: 50px;
+	font-weight: 400;
+	font-size: 40px;
+	color: #1D3044;
 	display: flex;
 	position: relative;
 	width: 100%;
@@ -25,31 +32,80 @@
 }
 
 
-.bmi-container input{
+.container input{
 	display: flex;
 	position: relative;
-	width: 100%;
-	justify-content: center;
+	align-items: center;
 	font-family: "Poppins", sans-serif;
+	background: #00FF00;
 }
 
-.bmi-container button{
+#height{
+	width: 40vw;
+	margin: 5px 0;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    left: 30%;
+    border: none;
+    color: #1D3044;
+}
+
+#weight{
+	margin: 5px 0;
+    font-size: 20px;
+    width: 40vw;
+    padding: 10px;
+    border-radius: 5px;
+    left: 30%;
+    border: none;
+    color: #1D3044;
+    background-color: #00FF00;
+}
+
+.container button{
 	overflow-x: hidden;
 	display: flex;
 	position: absolute;
 	margin: 25px;
-	padding: 3px 4px;
-	width: 100px;
+	width: 200px;
 	align-items: center;
 	text-align: center;
 	font-family: "Poppins", sans-serif;
 }
 
 
-.bmi-button{
+#btn{
+	margin-top: 25px;
+	font-size: 30px;
 	position: absolute;
-	right: 45%;
+	top: 70%;
+	font-family: "Poppins", sans-serif;	
+	font-weight: 500;
+	right: 40%;
+	background: #00FF00;
+	color: #1D3044;
+	border-radius: 30px;
+	padding: 10px 25px;
+	cursor: pointer;
+	border: none;
+
+}
+
+
+.container #result{
+	align-items: center;
 }
 
 
 
+#result{
+	background: white;
+	color: #1D3044;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	position: absolute;
+	top: 90%;
+	left: 43%;
+}
