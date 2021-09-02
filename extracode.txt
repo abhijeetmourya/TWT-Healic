@@ -1,0 +1,100 @@
+    
+    The previous Navbar HTML and CSS
+    
+     <header class="header">
+        <nav class="nav border-grid">
+            <div class="navbranding">
+                <a href="#" class="navBrand">Healic</a>
+            </div>
+
+            <div class="navtoggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="navmenu" id="nav-menu">
+                <div class="navclose" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="navlist">
+                    <li class="navitem"><a href="#home" class="navlink active">Home</a></li>
+                    <li class="navitem"><a href="#about" class="navlink">About</a></li>
+                    <li class="navitem"><a href="#services" class="navlink">Services</a></li>
+                    <li class="navitem"><a href="#contact" class="navlink">Contact</a></li>
+                    <li class="navitem"><a href="test.html" class="navlink navtestlink">Take a test</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+
+/* .header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  position:fixed;
+  width: 100%;
+  box-shadow: 0 0 5px #121212;
+}
+
+.navtestlink {
+  border: 1px solid var(--first-color-dark);
+  padding: 10px;
+}
+
+.navlink.active {
+  color: var(--first-color-dark)
+}
+
+@media screen and (max-width: 768px){
+  .navmenu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    padding: 3.5rem 1.5rem 0;
+    background: rgba(255,255,255,.3);
+    backdrop-filter: blur(10px);
+    transition: .5s;
+  }
+}
+
+.navclose{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navitem{
+  margin-bottom: 2rem;
+}
+
+.navclose, .navlink, .navBrand, .navtoggle{
+  color: var(--black-color);
+  transition: 0.3s;
+}
+
+.navlink:hover{
+  color: var(--first-color-dark);
+}
+
+.navtoggle{
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 10px;
+} */
