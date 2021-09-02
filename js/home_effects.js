@@ -3,15 +3,6 @@ const navMenu = document.getElementById('nav-menu'),
     closeMenu = document.getElementById('nav-close')
 
 
-toggleMenu.addEventListener('click', ()=>{
-    navMenu.classList.toggle('show')
-})
-
-
-closeMenu.addEventListener('click', ()=>{
-    navMenu.classList.remove('show')
-})
-
 
 document.addEventListener('mousemove', move);
 function move(e){
@@ -25,9 +16,9 @@ function move(e){
     })
 }
 
-gsap.from('.navlogo, .navtoggle', {opacity: 0, duration: 1, delay:2, y: 10})
-gsap.from('.navitem', {opacity: 0, duration: 1, delay: 2.1, y: 30, stagger: 0.2,})
-gsap.from('.home .title', {opacity: 0, duration: 1, delay:1.6, y: 30})
-gsap.from('.home .slogan', {opacity: 0, duration: 1, delay:1.8, y: 30})
-gsap.from('.home .redirector', {opacity: 0, duration: 1, delay:2.1, y: 30})
-gsap.from('.home .logoParts', {opacity: 0, duration: 1, delay:1.3, y: 30})
+// gsap.from('.navlogo, .navtoggle', {opacity: 0, duration: 1, delay:2, y: 10})
+// gsap.from('.navitem', {opacity: 0, duration: 1, delay: 2.1, y: 30, stagger: 0.2,})
+// gsap.from('.home .title', {opacity: 0, duration: 1, delay:1.6, y: 30})
+// gsap.from('.home .slogan', {opacity: 0, duration: 1, delay:1.8, y: 30})
+// gsap.from('.home .redirector', {opacity: 0, duration: 1, delay:2.1, y: 30})
+// gsap.from('.home .logoParts', {opacity: 0, duration: 1, delay:1.3, y: 30})
